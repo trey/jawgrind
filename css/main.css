@@ -817,12 +817,16 @@ textarea {
     page-break-after: avoid;
   }
 }
-/* line 4, ../sass/main.scss */
+/* line 9, ../sass/main.scss */
 body {
   background: #ddd;
 }
 
-/* line 7, ../sass/main.scss */
+/* line 12, ../sass/main.scss */
 .main {
   margin: 2em 3em;
+}
+/* line 14, ../sass/main.scss */
+.main h1 {
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }

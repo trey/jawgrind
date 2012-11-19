@@ -1,9 +1,17 @@
 @import "normalize";
 @import "html5bp";
+@import "compass/css3";
+
+$default-text-shadow-color: rgba(#000, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
 
 body {
     background: #ddd;
 }
 .main {
     margin: 2em 3em;
+    h1 {
+        @include single-text-shadow;
+    }
 }
