@@ -14,4 +14,13 @@ body {
     h1 {
         @include single-text-shadow;
     }
+    a {
+        text-decoration: none;
+        background: yellow;
+        color: darken(yellow, 20%);
+        padding: 1px 2px;
+        &:hover {
+            color: #000;
+        }
+    }
 }
