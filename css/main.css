@@ -294,28 +294,26 @@ textarea { resize: vertical; }
   p, h2, h3 { orphans: 3; widows: 3; }
   /* line 295, sass/_html5bp.scss */
   h2, h3 { page-break-after: avoid; } }
-/* line 9, sass/main.scss */
+/* line 10, sass/main.scss */
 body { background: #fff; }
 
-/* line 12, sass/main.scss */
-.main { margin: 2em auto; width: 50em; }
-/* line 15, sass/main.scss */
-.main h1 { text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6); }
-/* line 18, sass/main.scss */
+/* line 13, sass/main.scss */
+.main { margin: 2em auto; width: 55em; }
+/* line 17, sass/main.scss */
 .main a { text-decoration: none; background: rgba(255, 255, 0, 0.3); color: #333300; padding: 1px 2px; }
-/* line 23, sass/main.scss */
+/* line 22, sass/main.scss */
 .main a:hover { color: #000; background: yellow; }
-/* line 28, sass/main.scss */
-.main .icon { float: left; margin: 0 20px 20px 0; -webkit-box-shadow: 0px 0px 5px #333333; -moz-box-shadow: 0px 0px 5px #333333; box-shadow: 0px 0px 5px #333333; }
-/* line 33, sass/main.scss */
+/* line 27, sass/main.scss */
+.main .icon { float: left; margin: 0 20px 20px 0; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); }
+/* line 32, sass/main.scss */
 .main .description { width: 300px; float: left; }
-/* line 37, sass/main.scss */
+/* line 36, sass/main.scss */
 .main #subscribe { clear: both; }
 
-/* line 42, sass/main.scss */
+/* line 41, sass/main.scss */
 #hosts { list-style: none; padding: 0; }
-/* line 45, sass/main.scss */
-#hosts li { float: left; margin-right: 10px; }
+/* line 44, sass/main.scss */
+#hosts li { float: left; margin-right: 10px; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); border-width: 1px; }
 
-/* line 51, sass/main.scss */
+/* line 52, sass/main.scss */
 footer { font-size: 10px; padding-top: 50px; clear: both; }

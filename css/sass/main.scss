@@ -2,19 +2,18 @@
 @import "html5bp";
 @import "compass/css3";
 
-$default-text-shadow-color: rgba(#000, 0.6);
-$default-text-shadow-blur: 3px;
-$default-text-shadow-v-offset: 1px;
+@mixin nice-shadow {
+    border: solid 2px white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
 
 body {
     background: #fff;
 }
 .main {
     margin: 2em auto;
-    width: 50em;
-    h1 {
-        @include single-text-shadow;
-    }
+    width: 55em;
+    h1 {}
     a {
         text-decoration: none;
         background: rgba(255, 255, 0, .3);
@@ -28,7 +27,7 @@ body {
     .icon {
         float: left;
         margin: 0 20px 20px 0;
-        @include box-shadow;
+        @include nice-shadow;
     }
     .description {
         width: 300px;
@@ -45,6 +44,8 @@ body {
     li {
         float: left;
         margin-right: 10px;
+        @include nice-shadow;
+        border-width: 1px;
     }
 }
 
