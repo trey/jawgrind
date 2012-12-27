@@ -5,10 +5,6 @@ Infrastructure:
 		- Lay the groundwork for the database app -- incorporate it into this project or incorporate this work into the database project.
 	- Automatically import episode list from Jawgrind Database.
 Design:
-	- Use this image for the background of Jawgrind.com
-		http://www.eso.org/public/archives/images/screen/eso1236a.jpg
-		http://www.slate.com/articles/health_and_science/bad_astronomy/2012/12/best_astronomy_images_2012_see_the_most_beautiful_images_of_the_universe.single.html
-		https://twitter.com/rands/status/282226598474838016
 	- Cale's description:
 		A Podcast discussing every Star Trek episode ever.
 		http://www.midnightcheese.com/about/
