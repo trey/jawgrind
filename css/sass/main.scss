@@ -7,38 +7,37 @@
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
-body {
-    background: #fff;
+#description {
+    position: relative;
+    height: 1280px;
+    min-height: 1280px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 20px;
+    background: url(../img/pencil_nebula.jpg) 50% 0 fixed;
+    background-size: 100% auto;
+    @include clearfix;
+    article {
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+    }
 }
-.main {
-    margin: 2em auto;
-    width: 55em;
-    h1 {}
-    a {
-        text-decoration: none;
-        background: rgba(255, 255, 0, .3);
-        color: darken(yellow, 40%);
-        padding: 1px 2px;
-        &:hover {
-            color: #000;
-            background: yellow;
-        }
-    }
-    .icon {
-        float: left;
-        margin: 0 20px 20px 0;
-        @include nice-shadow;
-    }
-    .description {
-        width: 300px;
-        float: left;
-    }
-    #subscribe {
-        clear: both;
+h1 {
+
+}
+a {
+    text-decoration: none;
+    background: rgba(255, 255, 0, .3);
+    color: darken(yellow, 40%);
+    padding: 1px 2px;
+    &:hover {
+        color: #000;
+        background: yellow;
     }
 }
 
-#hosts {
+#hosts ul {
     list-style: none;
     padding: 0;
     @include clearfix;
@@ -51,8 +50,6 @@ body {
 }
 
 #episodes {
-    clear: left;
-    padding-top: 10px;
     li {
         margin-bottom: 5px;
     }

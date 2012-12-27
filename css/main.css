@@ -295,30 +295,22 @@ textarea { resize: vertical; }
   /* line 295, sass/_html5bp.scss */
   h2, h3 { page-break-after: avoid; } }
 /* line 10, sass/main.scss */
-body { background: #fff; }
+#description { position: relative; height: 1280px; min-height: 1280px; color: rgba(255, 255, 255, 0.8); font-size: 20px; background: url(../img/pencil_nebula.jpg) 50% 0 fixed; background-size: 100% auto; overflow: hidden; *zoom: 1; }
+/* line 19, sass/main.scss */
+#description article { height: 1000px; width: 100%; position: absolute; top: 50px; }
 
-/* line 13, sass/main.scss */
-.main { margin: 2em auto; width: 55em; }
-/* line 17, sass/main.scss */
-.main a { text-decoration: none; background: rgba(255, 255, 0, 0.3); color: #333300; padding: 1px 2px; }
-/* line 22, sass/main.scss */
-.main a:hover { color: #000; background: yellow; }
-/* line 27, sass/main.scss */
-.main .icon { float: left; margin: 0 20px 20px 0; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); }
-/* line 32, sass/main.scss */
-.main .description { width: 300px; float: left; }
-/* line 36, sass/main.scss */
-.main #subscribe { clear: both; }
+/* line 29, sass/main.scss */
+a { text-decoration: none; background: rgba(255, 255, 0, 0.3); color: #333300; padding: 1px 2px; }
+/* line 34, sass/main.scss */
+a:hover { color: #000; background: yellow; }
 
-/* line 41, sass/main.scss */
-#hosts { list-style: none; padding: 0; overflow: hidden; *zoom: 1; }
-/* line 45, sass/main.scss */
-#hosts li { float: left; margin-right: 10px; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); border-width: 1px; }
+/* line 40, sass/main.scss */
+#hosts ul { list-style: none; padding: 0; overflow: hidden; *zoom: 1; }
+/* line 44, sass/main.scss */
+#hosts ul li { float: left; margin-right: 10px; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); border-width: 1px; }
 
 /* line 53, sass/main.scss */
-#episodes { clear: left; padding-top: 10px; }
-/* line 56, sass/main.scss */
 #episodes li { margin-bottom: 5px; }
 
-/* line 61, sass/main.scss */
+/* line 58, sass/main.scss */
 footer { font-size: 10px; padding-top: 50px; clear: both; }
