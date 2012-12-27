@@ -311,9 +311,14 @@ body { background: #fff; }
 .main #subscribe { clear: both; }
 
 /* line 41, sass/main.scss */
-#hosts { list-style: none; padding: 0; }
-/* line 44, sass/main.scss */
+#hosts { list-style: none; padding: 0; overflow: hidden; *zoom: 1; }
+/* line 45, sass/main.scss */
 #hosts li { float: left; margin-right: 10px; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); border-width: 1px; }
 
-/* line 52, sass/main.scss */
+/* line 53, sass/main.scss */
+#episodes { clear: left; padding-top: 10px; }
+/* line 56, sass/main.scss */
+#episodes li { margin-bottom: 5px; }
+
+/* line 61, sass/main.scss */
 footer { font-size: 10px; padding-top: 50px; clear: both; }

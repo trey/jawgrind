@@ -1,6 +1,6 @@
 @import "normalize";
 @import "html5bp";
-@import "compass/css3";
+@import "compass";
 
 @mixin nice-shadow {
     border: solid 2px white;
@@ -41,11 +41,20 @@ body {
 #hosts {
     list-style: none;
     padding: 0;
+    @include clearfix;
     li {
         float: left;
         margin-right: 10px;
         @include nice-shadow;
         border-width: 1px;
+    }
+}
+
+#episodes {
+    clear: left;
+    padding-top: 10px;
+    li {
+        margin-bottom: 5px;
     }
 }
 
