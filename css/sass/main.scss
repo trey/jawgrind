@@ -7,22 +7,28 @@
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
-#description {
+section[data-type=background] {
     position: relative;
-    height: 1280px;
-    min-height: 1280px;
-    color: rgba(255, 255, 255, .8);
-    font-size: 20px;
-    background: url(../img/pencil_nebula.jpg) 50% 0 fixed;
-    background-size: 100% auto;
     @include clearfix;
-    article {
-        height: 1000px;
-        width: 100%;
-        position: absolute;
-        top: 50px;
-    }
+    color: rgba(255, 255, 255, .8);
 }
+
+#description {
+    font-size: 20px;
+    background: url(../img/galaxy_cluster_abell_520.jpg) 50% 0 fixed;
+    background-size: 100% auto;
+}
+
+#hosts {
+    min-height: 300px;
+    padding: 100px 0 0;
+    background: url(../img/ngc5189.jpg) 50% 0 fixed;
+}
+
+#episodes {
+    background: url(../img/ngc2818.jpg) 50% 0 fixed;
+}
+
 h1 {
 
 }
@@ -56,6 +62,7 @@ a {
 }
 
 footer {
+    display: none;
     font-size: 10px;
     padding-top: 50px;
     clear: both;

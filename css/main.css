@@ -295,22 +295,29 @@ textarea { resize: vertical; }
   /* line 295, sass/_html5bp.scss */
   h2, h3 { page-break-after: avoid; } }
 /* line 10, sass/main.scss */
-#description { position: relative; height: 1280px; min-height: 1280px; color: rgba(255, 255, 255, 0.8); font-size: 20px; background: url(../img/pencil_nebula.jpg) 50% 0 fixed; background-size: 100% auto; overflow: hidden; *zoom: 1; }
-/* line 19, sass/main.scss */
-#description article { height: 1000px; width: 100%; position: absolute; top: 50px; }
+section[data-type=background] { position: relative; overflow: hidden; *zoom: 1; color: rgba(255, 255, 255, 0.8); }
 
-/* line 29, sass/main.scss */
+/* line 16, sass/main.scss */
+#description { font-size: 20px; background: url(../img/galaxy_cluster_abell_520.jpg) 50% 0 fixed; background-size: 100% auto; }
+
+/* line 22, sass/main.scss */
+#hosts { min-height: 300px; padding: 100px 0 0; background: url(../img/ngc5189.jpg) 50% 0 fixed; }
+
+/* line 28, sass/main.scss */
+#episodes { background: url(../img/ngc2818.jpg) 50% 0 fixed; }
+
+/* line 35, sass/main.scss */
 a { text-decoration: none; background: rgba(255, 255, 0, 0.3); color: #333300; padding: 1px 2px; }
-/* line 34, sass/main.scss */
+/* line 40, sass/main.scss */
 a:hover { color: #000; background: yellow; }
 
-/* line 40, sass/main.scss */
+/* line 46, sass/main.scss */
 #hosts ul { list-style: none; padding: 0; overflow: hidden; *zoom: 1; }
-/* line 44, sass/main.scss */
+/* line 50, sass/main.scss */
 #hosts ul li { float: left; margin-right: 10px; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); border-width: 1px; }
 
-/* line 53, sass/main.scss */
+/* line 59, sass/main.scss */
 #episodes li { margin-bottom: 5px; }
 
-/* line 58, sass/main.scss */
-footer { font-size: 10px; padding-top: 50px; clear: both; }
+/* line 64, sass/main.scss */
+footer { display: none; font-size: 10px; padding-top: 50px; clear: both; }
