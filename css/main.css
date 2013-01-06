@@ -294,30 +294,50 @@ textarea { resize: vertical; }
   p, h2, h3 { orphans: 3; widows: 3; }
   /* line 295, sass/_html5bp.scss */
   h2, h3 { page-break-after: avoid; } }
-/* line 10, sass/main.scss */
-section[data-type=background] { position: relative; overflow: hidden; *zoom: 1; color: rgba(255, 255, 255, 0.8); }
+/* line 5, sass/main.scss */
+body { font-family: "PT Sans", Helvetica, sans-serif; font-size: 1em; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); color: rgba(255, 255, 255, 0.9); background: #444; }
+
+/* line 12, sass/main.scss */
+#wrapper { margin: 0 5em; }
 
 /* line 16, sass/main.scss */
-#description { font-size: 20px; background: url(../img/galaxy_cluster_abell_520.jpg) 50% 0 fixed; background-size: 100% auto; }
+section[data-type=background] { position: relative; overflow: hidden; *zoom: 1; }
 
-/* line 22, sass/main.scss */
-#hosts { min-height: 300px; padding: 100px 0 0; background: url(../img/ngc5189.jpg) 50% 0 fixed; }
-
+/* line 21, sass/main.scss */
+header { overflow: hidden; *zoom: 1; }
+/* line 23, sass/main.scss */
+header h2 { font-size: 1em; font-weight: normal; }
 /* line 28, sass/main.scss */
-#episodes { background: url(../img/ngc2818.jpg) 50% 0 fixed; }
+header .icon img { width: 100%; max-width: 300px; float: left; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
 
-/* line 35, sass/main.scss */
-a { text-decoration: none; background: rgba(255, 255, 0, 0.3); color: #333300; padding: 1px 2px; }
-/* line 40, sass/main.scss */
-a:hover { color: #000; background: yellow; }
+/* line 37, sass/main.scss */
+#description { padding-left: 1em; font-size: 1em; }
 
-/* line 46, sass/main.scss */
+/* line 43, sass/main.scss */
 #hosts ul { list-style: none; padding: 0; overflow: hidden; *zoom: 1; }
-/* line 50, sass/main.scss */
-#hosts ul li { float: left; margin-right: 10px; border: solid 2px white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); border-width: 1px; }
+/* line 47, sass/main.scss */
+#hosts ul li { float: left; margin-right: 10px; background: yellow; }
+/* line 51, sass/main.scss */
+#hosts ul li a { padding: 0; position: relative; display: inline-block; border: 2px solid white; }
+/* line 56, sass/main.scss */
+#hosts ul li a .caption { opacity: 0; position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(255, 0, 255, 0.6); font-size: 1em; color: #fff; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
+/* line 65, sass/main.scss */
+#hosts ul li a .caption span { padding: 5px; }
+/* line 71, sass/main.scss */
+#hosts ul li a:hover .caption { opacity: 1; }
 
-/* line 59, sass/main.scss */
+/* line 83, sass/main.scss */
+h1, h2 { color: #fff; }
+
+/* line 86, sass/main.scss */
+a { text-decoration: none; color: rgba(255, 255, 0, 0.8); border-bottom: 1px solid rgba(255, 255, 0, 0.2); -webkit-transition: 0.1s; -moz-transition: 0.1s; -o-transition: 0.1s; transition: 0.1s; }
+/* line 91, sass/main.scss */
+a:hover { color: yellow; border-color: yellow; }
+
+/* line 98, sass/main.scss */
 #episodes li { margin-bottom: 5px; }
 
-/* line 64, sass/main.scss */
-footer { display: none; font-size: 10px; padding-top: 50px; clear: both; }
+/* line 103, sass/main.scss */
+footer { font-size: 0.7em; padding: 50px 0 20px 0; color: rgba(255, 255, 255, 0.4); }
+/* line 107, sass/main.scss */
+footer a { padding: 0; background: none; }
