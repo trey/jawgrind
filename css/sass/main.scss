@@ -43,16 +43,23 @@ header {
             @include border-radius(10px);
         }
         @include breakpoint(xl) {
-            padding-bottom: 1em;
+            width: 25%;
+            padding-right: 3%;
+            padding-bottom: 3%;
             img {
-                max-width: 200px;
+                width: 100%;
+                min-width: 100px;
             }
         }
         @include breakpoint(xs) {
             float: none;
+            width: auto;
             padding-top: 1em;
             padding-right: 0;
             text-align: center;
+            img {
+                width: 200px;
+            }
         }
     }
 }
