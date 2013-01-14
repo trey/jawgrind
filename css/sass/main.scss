@@ -1,6 +1,7 @@
 @import "normalize";
 @import "html5bp";
 @import "compass";
+@import "mixins";
 
 body {
     font-family: "PT Sans", Helvetica, sans-serif;
@@ -11,15 +12,13 @@ body {
 }
 #wrapper {
     margin: 0 5em;
-
-    @media (min-width: 1100px) {
+    @include breakpoint(xxl) {
         margin: 0 auto;
         width: 60em;
     }
-    @media (max-width: 768px) {
+    @include breakpoint(l) {
         margin: 0 1em;
     }
-
 }
 
 section[data-type=background] {
@@ -40,17 +39,16 @@ header {
         float: left;
         padding-right: 1.5em;
         img {
-            width: 100%;
             max-width: 350px;
             @include border-radius(10px);
         }
-        @media (max-width: 1100px) {
+        @include breakpoint(xl) {
             padding-bottom: 1em;
             img {
                 max-width: 200px;
             }
         }
-        @media (max-width: 480px) {
+        @include breakpoint(xs) {
             float: none;
             padding-top: 1em;
             padding-right: 0;
@@ -61,18 +59,18 @@ header {
 
 #description {
     font-size: 1em;
-    @media (min-width: 480px) {
+    @include breakpoint(s) {
         p:first-child {
             margin-top: 0;
         }
     }
-    @media (max-width: 1100px) {
+    @include breakpoint(xl) {
         display: inline;
     }
 }
 
 #hosts {
-    @media (max-width: 1100px) {
+    @include breakpoint(xl) {
         clear: both;
         text-align: center;
         margin-top: 20px;
@@ -85,6 +83,7 @@ header {
         li {
             display: inline-block;
             margin-right: 10px;
+            &:last-child { margin-right: 0; }
             a {
                 padding: 0;
                 position: relative;
@@ -113,7 +112,7 @@ header {
                     }
                 }
             }
-            @media (max-width: 620px) {
+            @include breakpoint(m) {
                 a {
                     img {
                         max-width: 69px;
@@ -123,7 +122,7 @@ header {
                     }
                 }
             }
-            @media (max-width: 480px) {
+            @include breakpoint(xs) {
                 display: block;
                 margin-bottom: 25px;
                 a img {
@@ -156,7 +155,7 @@ a {
 }
 
 #subscribe {
-    @media (max-width: 480px) {
+    @include breakpoint(xs) {
         h2 {
             margin-top: 0;
         }
