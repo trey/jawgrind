@@ -15,6 +15,9 @@
         </style>
     </head>
     <body>
+
+<!-- Not on Tumblr since Tuesday, January 7, 2014. -->
+
         <div id="wrapper">
             <header>
                 <h1>Jawgrind</h1>
