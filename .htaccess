@@ -1,6 +1,8 @@
 Options +FollowSymLinks
 RewriteEngine on
 
+RewriteRule ^news/?$ https://app.e2ma.net/app2/audience/signup/1730553/31622/?v=a [R=301,L]
+RewriteRule ^zero/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-0/ [R=301,L]
 RewriteRule ^0/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-0/ [R=301,L]
 RewriteRule ^1/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-1/ [R=301,L]
 RewriteRule ^2/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-2-stephens-moustache/ [R=301,L]

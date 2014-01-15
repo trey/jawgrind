@@ -98,7 +98,7 @@
             </section>
 
             <footer>
-                <p>Copyright &copy; 2010-2013 Arthur L. Piepmeier III. All rights reserved.</p>
+                <p>Copyright &copy; 2010-2014 Arthur L. Piepmeier III. All rights reserved.</p>
                 <p>I found the man with the bandaged head <a href="http://www.flickr.com/photos/perpetualplum/3795981214/in/set-72157621839586133">here</a>.</p>
             </footer>
         </div><!-- /wrapper -->
