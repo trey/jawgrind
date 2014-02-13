@@ -58,7 +58,8 @@
             <section id="episodes">
                 <h3>Episodes</h3>
                 <div>
-                    <ol start="33" reversed>
+                    <ol start="34" reversed>
+                        <li><a href="http://jawgrind.com/34">Shat-assery</a></li>
                         <li><a href="http://jawgrind.com/33">Totes Jefferies</a></li>
                         <li><a href="http://jawgrind.com/32">Rub the Obelisk</a></li>
                         <li><a href="http://jawgrind.com/31">First Officer of the Enterprise</a></li>

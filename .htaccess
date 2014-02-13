@@ -37,5 +37,6 @@ RewriteRule ^30/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-30-backdo
 RewriteRule ^31/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-31-first-officer-of-the-enterprise/ [R=301,L]
 RewriteRule ^32/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-32-rub-the-obelisk/ [R=301,L]
 RewriteRule ^33/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-33-totes-jefferies/ [R=301,L]
+RewriteRule ^34/?$ http://3rdaverad.io/shows/jawgrind/episodes/episode-34-shat-assery/ [R=301,L]
 
 # ErrorDocument 404 /404.php
