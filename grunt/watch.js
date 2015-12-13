@@ -3,15 +3,15 @@ module.exports = {
         livereload: true,
     },
     html: {
-        files: ['*.html', '*.php']
+        files: ['public/*.html', 'public/*.php']
     },
     sass: {
         options: { livereload: false },
-        files: ['css/**/*.scss'],
+        files: ['public/css/**/*.scss'],
         tasks: ['sasslint', 'sass']
     },
     css: {
-        files: ['css/build/**/*.css'],
+        files: ['public/css/build/**/*.css'],
         tasks: ['postcss']
     }
 };

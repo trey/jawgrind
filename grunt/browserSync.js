@@ -1,15 +1,16 @@
 module.exports = {
     dev: {
         bsFiles: {
-            src: 'css/**/*.css'
+            src: 'public/css/**/*.css'
         },
         options: {
             watchTask: true,
             files: [
-                '!css/build/**/*.css',
-                'css/**/*.css',
-                'js/**/*.js',
-                '*.html'
+                '!public/css/build/**/*.css',
+                'public/css/**/*.css',
+                'public/js/**/*.js',
+                'public/*.html',
+                'public/*.php'
             ],
             open: false,
             proxy: 'localhost:9000',

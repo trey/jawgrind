@@ -3,9 +3,9 @@
 options:
   formatter: stylish
 files:
-  include: 'css/**/*.scss'
+  include: 'public/css/**/*.scss'
   ignore:
-    - 'css/scss/vendors/*.scss'
+    - 'public/css/scss/vendors/*.scss'
 rules:
   # Extends
   extends-before-mixins: 1

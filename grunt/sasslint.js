@@ -1,8 +1,8 @@
 module.exports = {
     files: {
-        include: ['css/**/*.scss'],
+        include: ['public/css/**/*.scss'],
         ignore: [
-            'css/scss/vendors/*.scss'
+            'public/css/scss/vendors/*.scss'
         ]
     }
 };
