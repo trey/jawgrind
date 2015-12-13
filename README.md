@@ -1,3 +1,3 @@
-# This is the homepage of Jawgrind.com.
+# This is Jawgrind.com.
 
 [Trey Piepmeier](http://treypiepmeier.com) is responsible.
