@@ -1,0 +1,191 @@
+---
+---
+
+@import 'vendors/normalize';
+@import 'vendors/html5bp';
+@import 'mixins';
+
+body {
+    background: #444;
+    color: rgba(255, 255, 255, .9);
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+}
+
+#wrapper {
+    margin: 0 5em;
+
+    @include breakpoint(xxl) {
+        margin: 0 auto;
+        width: 60em;
+    }
+
+    @include breakpoint(l) { margin: 0 1em; }
+}
+
+header {
+    h2 {
+        font-size: 1em;
+        font-weight: normal;
+    }
+}
+
+#main {
+    @include clearfix;
+
+    .icon {
+        float: left;
+        padding-right: 1.5em;
+
+        img {
+            border-radius: 10px;
+            max-width: 350px;
+        }
+
+        @include breakpoint(xl) {
+            padding-bottom: 3%;
+            padding-right: 3%;
+            width: 25%;
+
+            img {
+                min-width: 100px;
+                width: 100%;
+            }
+        }
+
+        @include breakpoint(xs) {
+            float: none;
+            padding-right: 0;
+            padding-top: 1em;
+            text-align: center;
+            width: auto;
+
+            img { width: 200px; }
+        }
+    }
+}
+
+#description {
+    @include breakpoint(s) { p:first-child { margin-top: 0; } }
+    font-size: 1em;
+}
+
+#hosts {
+    ul {
+        @include clearfix;
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+            &:last-child { margin-right: 0; }
+
+            a {
+                border: 2px solid #fff;
+                display: inline-block;
+                padding: 0;
+                position: relative;
+
+                &:hover .caption { opacity: 1; }
+
+                img { max-width: 97px; }
+
+                .caption {
+                    background: rgba(255, 0, 255, .6);
+                    bottom: 0;
+                    color: #fff;
+                    font-size: 1em;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    transition: all .2s;
+                    width: 100%;
+
+                }
+
+                .caption span { padding: 5px; }
+            }
+
+            @include breakpoint(m) {
+                a {
+                    img { max-width: 69px; }
+
+                    .caption { opacity: 1; }
+                }
+            }
+
+            @include breakpoint(xs) {
+                display: block;
+                margin-bottom: 25px;
+
+                a img { max-width: 120px; }
+            }
+        }
+    }
+
+    @include breakpoint(xl) {
+        clear: both;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+h1,
+h2 { color: #fff; }
+
+a {
+    border-bottom: 1px solid rgba(255, 255, 0, .2);
+    color: rgba(255, 255, 0, .8);
+    text-decoration: none;
+    transition: all .1s;
+
+    &:hover {
+        border-color: #ff0;
+        color: #ff0;
+    }
+}
+
+#episodes {
+    div {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        @include breakpoint(l) {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        @include breakpoint(m) {
+            -moz-column-count: 1;
+            -webkit-column-count: 1;
+            column-count: 1;
+        }
+    }
+
+    ol {
+        margin: 0;
+
+        li {
+            break-inside: avoid;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+#subscribe {
+    @include breakpoint(xs) { h2 { margin-top: 0; } }
+}
+
+footer {
+    color: rgba(255, 255, 255, .4);
+    font-size: .7em;
+    padding: 50px 0 20px;
+
+    a {
+        background: none;
+        padding: 0;
+    }
+}
