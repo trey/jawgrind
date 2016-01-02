@@ -2,7 +2,7 @@
 <html>
 {% include head.html %}
 
-<body>
+<body{% if page.title %} class="episode"{% endif %}>
     <div id="wrapper">
     {% include header.html %}
 

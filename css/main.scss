@@ -14,13 +14,16 @@ body {
 }
 
 #wrapper {
+    // middle
     margin: 0 5em;
 
+    // largest
     @include breakpoint(xxl) {
         margin: 0 auto;
         width: 60em;
     }
 
+    // smallest
     @include breakpoint(l) { margin: 0 1em; }
 }
 
@@ -182,7 +185,7 @@ a {
 footer {
     color: rgba(255, 255, 255, .4);
     font-size: .7em;
-    padding: 50px 0 20px;
+    padding: 50px 0 80px;
 
     a {
         background: none;
@@ -190,6 +193,49 @@ footer {
     }
 }
 
-.notes {
-    ul ul { margin: 0; }
+.episode {
+    audio {
+        display: block;
+        width: 100%;
+    }
+
+    nav {
+        @include clearfix;
+        margin-top: 100px;
+        padding: 10px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .next {
+            float: right;
+            // Break to the next line if things are close.
+            padding-right: 20px;
+        }
+
+        .previous { float: left; }
+    }
+
+    #wrapper {
+        margin: 0 auto;
+        width: 600px;
+
+        @include breakpoint(m) {
+            margin: 0 1em;
+            width: auto;
+        }
+    }
+
+    .notes {
+        img { width: 100%; }
+
+        ul ul { margin: 0; }
+    }
 }
