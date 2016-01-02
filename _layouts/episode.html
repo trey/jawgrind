@@ -4,7 +4,15 @@ layout: default
 
 <h1>Episode {{ page.permalink }}: {{ page.title }}</h1>
 
-<h2>Published {{ page.date | date: '%A, %B %e, %Y' }}</h2>
+<ul>
+    {% if page.recorded %}
+    <li>Recorded: {{ page.recorded | date: '%A, %B %e, %Y' }}</li>
+    {% endif %}
+    <li>Published: {{ page.date | date: '%A, %B %e, %Y' }}</li>
+    <li><a href="http://jawgrind.s3.amazonaws.com/Jawgrind-Episode-{{ page.permalink }}.mp3">☞ Download {{ page.filesize }} MB</a> / Runtime {{ page.runtime }} </li>
+</ul>
+
+<div><audio src="http://jawgrind.s3.amazonaws.com/Jawgrind-Episode-{{ page.permalink }}.mp3" controls preload="none"></audio></div>
 
 <div class="notes">
     {{ content }}
