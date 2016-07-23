@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section id="main">
-    <div class="icon"><img src="/img/jawgrind.jpg" alt="Jawgrind's mascot"></div>
+    <div class="icon"><img src="{{ site.url }}/img/jawgrind.jpg" alt="Jawgrind's mascot"></div>
     <section id="description">
         <p>Jawgrind is where <a href="https://twitter.com/calem">Cale</a>,
         <a href="https://twitter.com/ploafmaster">Daniel</a>,
@@ -15,11 +15,11 @@ layout: default
     </section>
     <section id="hosts">
         <ul>
-            <li><a href="http://midnightcheese.com"><img src="/img/calem.jpg" alt="Cale Mooth"><span class="caption"><span>Cale</span></span></a></li>
-            <li><a href="http://danielcwarshaw.com/"><img src="/img/ploafmaster.jpg" alt="Daniel Warshaw"><span class="caption"><span>Daniel</span></span></a></li>
-            <li><a href="http://jasoncoleman.net"><img src="/img/super_structure.jpg" alt="Jason Coleman"><span class="caption"><span>Jason</span></span></a></li>
-            <li><a href="http://philbarbato.com"><img src="/img/philbarbato.jpg" alt="Phil Barbato"><span class="caption"><span>Phil</span></span></a></li>
-            <li><a href="http://treypiepmeier.com"><img src="/img/trey.jpg" alt="Trey Piepmeier"><span class="caption"><span>Trey</span></span></a></li>
+            <li><a href="http://midnightcheese.com"><img src="{{ site.url }}/img/calem.jpg" alt="Cale Mooth"><span class="caption"><span>Cale</span></span></a></li>
+            <li><a href="http://danielcwarshaw.com/"><img src="{{ site.url }}/img/ploafmaster.jpg" alt="Daniel Warshaw"><span class="caption"><span>Daniel</span></span></a></li>
+            <li><a href="http://jasoncoleman.net"><img src="{{ site.url }}/img/super_structure.jpg" alt="Jason Coleman"><span class="caption"><span>Jason</span></span></a></li>
+            <li><a href="http://philbarbato.com"><img src="{{ site.url }}/img/philbarbato.jpg" alt="Phil Barbato"><span class="caption"><span>Phil</span></span></a></li>
+            <li><a href="http://treypiepmeier.com"><img src="{{ site.url }}/img/trey.jpg" alt="Trey Piepmeier"><span class="caption"><span>Trey</span></span></a></li>
         </ul>
     </section><!-- /hosts -->
 </section><!-- /main -->
@@ -29,7 +29,7 @@ layout: default
     <div>
         <ol start="{{ site.posts | size | minus: 1 }}" reversed>
         {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ol>
     </div>
