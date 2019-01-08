@@ -9,7 +9,7 @@
 title: Jawgrind
 email: trey@jawgrind.com
 description: A podcast discussing every episode of Star Trek.
-url: "http://jawgrind.com" # the base hostname & protocol for your site
+url: "https://jawgrind.com" # the base hostname & protocol for your site
 twitter_username: jawgrind
 defaults:
   -
