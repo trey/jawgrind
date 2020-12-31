@@ -1,0 +1,23 @@
+---
+layout: layouts/default.njk
+bodyClass: episode
+---
+
+<h1>Episode {{ episode }}: {{ title }}</h1>
+
+<ul class="meta">
+    {% if recorded %}
+    <li>Recorded: {{ recorded | fullDate }}</li>
+    {% endif %}
+    <li>Published: {{ page.date | fullDate }}</li>
+    <li><a href="https://jawgrind.s3.amazonaws.com/Jawgrind-Episode-{{ episode }}.mp3">☞ Download {{ filesize }} MB</a> / Runtime {{ runtime }} </li>
+</ul>
+
+<div><audio src="https://jawgrind.s3.amazonaws.com/Jawgrind-Episode-{{ episode }}.mp3" controls preload="none"></audio></div>
+
+<div class="notes">
+    {{ content | safe }}
+</div>
+
+{% set collection = collections.posts %}
+{% include 'components/post-nav.njk' %}

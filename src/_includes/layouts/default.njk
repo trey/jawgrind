@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}{% if title %} Episode {{ episode }}: {{ title }}{% endif %}</title>
+    <meta name="description" content="{{ metadata.changelogDescription }}" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+</head>
+
+<body{%- if bodyClass %} class="{{ bodyClass }}"{%- endif -%}>
+    <div id="wrapper">
+        <header>
+            {% if page.url == '/' %}
+            <h1>Jawgrind</h1>
+            {% else %}
+            <h1><a href="/">Jawgrind</a></h1>
+            {% endif %}
+            <h2>A podcast discussing every Star Trek episode ever.</h2>
+        </header>
+
+        {{ content|safe }}
+
+        <footer>
+            <p>Copyright &copy; 2010-2020 <a href="https://treypiepmeier.com">Trey Piepmeier</a>. All rights reserved. Hosted <a href="https://github.com/trey/jawgrind">on GitHub</a>.</p>
+            <p>I found the man with the bandaged head <a href="http://www.flickr.com/photos/perpetualplum/3795981214/in/set-72157621839586133">here</a>.</p>
+        </footer>
+    </div><!-- /wrapper -->
+
+    <script>
+        var _gauges = _gauges || [];
+        (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '51939591108d7b7cb500017d');
+            t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+            t.src = 'https://track.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+        })();
+    </script>
+</body>
+</html>

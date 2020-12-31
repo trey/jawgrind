@@ -1,0 +1,5 @@
+{
+    "layout": "layouts/episode.njk",
+    "tags": ["posts"],
+    "permalink": "{{ episode }}/"
+}
