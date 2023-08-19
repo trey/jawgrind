@@ -10,10 +10,10 @@ bodyClass: episode
     <li>Recorded: {{ recorded | fullDate }}</li>
     {% endif %}
     <li>Published: {{ page.date | fullDate }}</li>
-    <li><a href="https://f005.backblazeb2.com/file/piepworks-cdn/jawgrind/Jawgrind-Episode-{{ episode }}.mp3">☞ Download {{ filesize }} MB</a> / Runtime {{ runtime }} </li>
+    <li><a href="https://treylabs-cdn.nyc3.digitaloceanspaces.com/jawgrind/Jawgrind-Episode-{{ episode }}.mp3">☞ Download {{ filesize }} MB</a> / Runtime {{ runtime }} </li>
 </ul>
 
-<div><audio src="https://f005.backblazeb2.com/file/piepworks-cdn/jawgrind/Jawgrind-Episode-{{ episode }}.mp3" controls preload="none"></audio></div>
+<div><audio src="https://treylabs-cdn.nyc3.digitaloceanspaces.com/jawgrind/Jawgrind-Episode-{{ episode }}.mp3" controls preload="none"></audio></div>
 
 <div class="notes">
     {{ content | safe }}
